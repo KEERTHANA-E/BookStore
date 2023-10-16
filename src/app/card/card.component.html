@@ -1,0 +1,9 @@
+<div class="card h-100">
+    <img class="card-img-top" src="{{book?.image}}" alt="Card image cap" style="max-height: 200px;">
+    <div class="card-body">
+      <h5 class="card-title">{{book?.title | slice:0:20}} </h5>
+      <p class="card-text">{{book?.summary | slice:0:50}}</p>
+      <h5>$ {{book?.price?.displayValue}}</h5>
+      <button href="" class="btn btn-info btn-block text-white" (click)="addToCart(book)">Add to cart</button>
+    </div>
+  </div>
